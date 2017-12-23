@@ -2,3 +2,17 @@
 target
 .classpath
 .project
+# 忽略所有.a文件
+*.a
+
+# 但否定忽略lib.a,尽管已经在前面忽略了所有.a文件
+!lib.a
+
+#忽略build/文件夹下面的所有文件
+/build/
+
+#忽略/doc/notes.txt不包括doc/server/arch.txt
+/doc/*.txt
+
+#忽略所有的.pdf文件 在doc/directory下的
+doc/**/*.pdf
